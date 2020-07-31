@@ -361,10 +361,10 @@ namespace WinBioNET
         public static extern WinBioErrorCode LogonIdentifiedUser(WinBioSessionHandle sessionHandle);
 
         [DllImport(LibName, EntryPoint = "WinBioAcquireFocus")]
-        public static extern WinBioErrorCode AcquireFocus(WinBioSessionHandle sessionHandle);
+        public static extern WinBioErrorCode AcquireFocus();
 
         [DllImport(LibName, EntryPoint = "WinBioReleaseFocus")]
-        public static extern WinBioErrorCode ReleaseFocus(WinBioSessionHandle sessionHandle);
+        public static extern WinBioErrorCode ReleaseFocus();
 
         [DllImport(LibName, EntryPoint = "WinBioFree")]
         private extern static WinBioErrorCode Free(IntPtr address);
